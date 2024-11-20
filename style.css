@@ -1,0 +1,950 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+/* scrolling css */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d70371;
+}
+
+::selection {
+  background: rgb(0, 123, 255, 0.3);
+}
+
+/* what's app section start */
+.whatsApp {
+  top: 80%;
+  left: 0%;
+  position: fixed;
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  z-index: 9999;
+  cursor: pointer;
+  /* width: 30px;
+  height: 30px; */
+}
+
+
+.whatsApp a {
+  font-size: 36px;
+  color: green;
+}
+
+.whatsApp:hover {
+  background: green;
+}
+
+.whatsApp:hover a {
+  color: white;
+}
+
+/* what's app section start */
+
+
+/* navbar section start */
+.content {
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  padding: 25px 0;
+  transition: all 0.3s ease;
+}
+
+.navbar.sticky {
+  background: rgb(254, 204, 228);
+  padding: 10px 0;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo a {
+  color: #000;
+  font-size: 45px;
+  font-weight: 600;
+  font-family: "Southmore", cursive;
+  text-decoration: none;
+}
+
+.navbar .menu-list {
+  display: inline-flex;
+  font-family: "Poppins", cursive;
+}
+
+.menu-list li {
+  list-style: none;
+}
+
+.menu-list li a {
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.menu-list li a:hover {
+  color: #fe0072;
+}
+
+.icon {
+  color: #ffa6d0;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.menu-list .cancel-btn {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+/* hero section start */
+.bg-img {
+  background: url("./images/bg.PNG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 120vh;
+  width: 100%;
+  opacity: 0.65;
+}
+
+.bg-img svg {
+  position: absolute;
+  bottom: -24%;
+  z-index: 999;
+}
+
+.heroSite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 70px;
+}
+
+.poster {
+  font-family: "Poppins", cursive;
+  font-size: 80px;
+  color: #e72801;
+}
+
+.posterName {
+  color: rgb(200, 0, 255);
+  font-family: cursive;
+}
+
+.posterName2 {
+  color: rgb(255, 0, 123);
+}
+
+.heroSite .field h3 {
+  color: rgb(0, 0, 255);
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+}
+
+/* .discount section start */
+
+#sales h1 {
+  font-size: 66px;
+  font-family: "Great Vibes", cursive;
+  text-align: center;
+  margin-top: 4vh;
+}
+#sales h2 {
+  font-size: 24px;
+  font-family: cursive;
+  text-align: center;
+}
+
+
+.photo-Album {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.photo-frame {
+  width: 300px;
+  height: 200px;
+  border: 2px solid #c8a97e;
+  border-radius: 10px;
+  position: relative;
+  margin: 15px;
+  overflow: hidden;
+}
+
+.photo img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.photo-detail {
+  padding: 120px 20px;
+  display: none;
+  position: absolute;
+  top: 0;
+}
+
+.photo-frame:hover .photo-detail {
+  display: block;
+}
+
+.photo-detail h3 {
+  background-color: black;
+  color: rgb(226, 226, 226);
+  padding: 5px;
+}
+
+.photo-detail h2 {
+  color: red;
+}
+
+.photo-frame:hover .photo {
+  transform: scale(1.2);
+  transition: 1s;
+}
+
+/* .discount section end */
+
+/* limited sales start */
+.sales {
+  background-image: url(./images/BG2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 65vh;
+  margin-top: 20vh;
+}
+
+.sale {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.discount h3 {
+  color: white;
+  font-size: 60px;
+  font-family: "Great Vibes", cursive;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
+}
+
+.discount h2 {
+  font-size: 50px;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  font-weight: bold;
+}
+.discount h4 {
+  font-size: 30px;
+  color: #FE0909;
+  text-shadow: 1px 1px 1px black;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.discount .btnOrder {
+  width: 15rem;
+  /* height: 38px; */
+  padding: 1rem .7rem;
+  text-align: center;
+  letter-spacing: .1rem;
+  background-color: #ff1f69;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.discount .btnOrder i{
+  margin-left: .5rem;
+  animation: animate .5s ease infinite;
+  transition: .5s ease;
+}
+
+@keyframes animate
+{
+  0%
+  {
+    transform: translateX(-5px);
+  }
+  100%
+  {
+    transform: translateX(5px);
+  }
+}
+
+.discount a{
+  color: #fff;
+  text-decoration: none;
+}
+
+/* limited sales end */
+
+/* Menu section stats  */
+.startMenu {
+  margin-top: 25vh;
+}
+
+.startMenu h1 {
+  font-size: 66px;
+  font-family: "Great Vibes", cursive;
+  text-align: center;
+}
+
+.startMenu h2 {
+  font-size: 24px;
+  font-family: cursive;
+  text-align: center;
+  margin-bottom: 2vh;
+}
+
+.containerCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 300px;
+  height: 432px;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 7px;
+  background: rgb(238, 235, 235);
+  border: 2px solid #c8a97e;
+}
+
+.cardImg{
+  overflow: hidden;
+}
+
+.cardImg img {
+  width: 100%;
+  height: 70%;
+  padding-bottom: 10px;
+  border-radius: 7px;
+  transition: all 1.5s ease-in-out;
+}
+
+.cardImg:hover img{
+  transform: scale(1.5) rotate(9deg);
+}
+
+.menuDetails {
+  text-align: center;
+}
+
+.menuDetails h2 {
+  font-size: 1.7rem;
+  color: #222;
+}
+
+.menuDetails .price {
+  font-size: 1.4rem;
+  color: #222;
+  padding: .4rem 0;
+}
+
+.menuDetails .stars i {
+  font-size: 1.7rem;
+  color: #c8a97e;
+}
+
+/* Menu section Ends  */
+
+/* gallery section starts */
+.galleryStart {
+  margin-top: 25vh;
+}
+
+.galleryStart h1 {
+  font-size: 66px;
+  font-family: "Great Vibes", cursive;
+  text-align: center;
+}
+
+.galleryStart h2 {
+  font-size: 24px;
+  font-family: cursive;
+  text-align: center;
+  margin-bottom: 13vh;
+}
+
+.galleryContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.galleryCard {
+  width: 280px;
+  height: 200px;
+  border: 2px solid #c8a97e;
+  border-radius: 10px;
+  margin: 15px 5px;
+  overflow: hidden;
+}
+
+.photoGallery img {
+  width: 100%;
+  height: 210px;
+  border-radius: 10px;
+}
+
+.galleryCard:hover .photoGallery {
+  transform: scale(1.2);
+  transition: 1s;
+}
+
+/* gallery section ends */
+
+/* chef section starts */
+
+.chefStart {
+  margin-top: 25vh;
+}
+
+.chefStart h1 {
+  font-size: 66px;
+  font-family: "Great Vibes", cursive;
+  text-align: center;
+}
+
+.chefStart h2 {
+  font-size: 24px;
+  font-family: cursive;
+  text-align: center;
+  margin-bottom: 13vh;
+}
+
+.containerChef {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cardChef {
+  margin: 12px;
+  padding: 8px;
+  width: 290px;
+  height: 400px;
+  background-color: rgb(238, 235, 235);
+  border: 2px solid #c8a97e;
+  box-shadow: 0 5px 28px rgba(0, 0, 0, 0.05)
+}
+
+.cardChef img {
+  display: block;
+  width: 100%;
+  height: 70%;
+}
+
+.card-info {
+  padding: 15px 0 7px;
+  text-align: center;
+}
+
+.card-info h6 {
+  margin-bottom: 3px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  text-transform: capitalize;
+}
+
+.card-info span {
+  margin-bottom: 5px;
+  color: #c8a97e;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+.card-info a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 8px 2px 0;
+  color: #333333;
+  background-color: #f7f7f7f7;
+  border-radius: 50%;
+  font-size: 15px;
+  text-decoration: none;
+  line-height: 30px;
+  transition: all .5s;
+}
+
+.card-info a:hover:nth-child(1) {
+  color: #ffffff;
+  background-color: #1877f2;
+}
+
+.card-info a:hover:nth-child(2) {
+  color: #ffffff;
+  background-color: #e1306c;
+}
+
+.card-info a:hover:nth-child(3) {
+  color: #ffffff;
+  background-color: #1877f2;
+}
+
+.card-info a:hover:nth-child(4) {
+  color: #ffffff;
+  background-color: #e1306c;
+}
+
+/* chef section Ends */
+
+/* contact section starts */
+.heading {
+  margin-top: 25vh;
+}
+
+.heading h1 {
+  font-size: 66px;
+  font-family: "Great Vibes", cursive;
+  text-align: center;
+}
+
+.heading h2 {
+  font-size: 24px;
+  font-family: cursive;
+  text-align: center;
+  margin-bottom: 13vh;
+}
+
+.icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.icons {
+  background-color: rgb(238, 235, 235);
+  width: 280px;
+  height: 200px;
+  border: 2px solid #c8a97e;
+  border-radius: 10px;
+  margin: 15px 10px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.icons i {
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  font-size: 2.5rem;
+  background: #222;
+  color: #fff;
+  margin-top: 15px;
+  border-radius: 50%;
+}
+
+.icons h3 {
+  color: #222;
+  font-size: 1.8rem;
+  padding: 0.5rem 0;
+}
+
+.icons p {
+  color: #222;
+  font-size: 1.2rem;
+}
+
+
+/* get in touch start */
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.row form  h3{
+  color: #c8a97e; 
+  font-size: 26px; 
+}
+
+.inputBox input {
+  padding: 15px 17px;
+  margin: 7px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.row textarea {
+  padding: 15px 17px;
+  margin: 7px;
+  height: 20vh;
+  width: 97%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.row iframe{
+  width: 50%;
+  height: 267px;
+}
+
+.row #btnOrder {
+  width: 10rem;
+  padding: 1rem .7rem;
+  text-align: center;
+  letter-spacing: .1rem;
+  background-color: #ff1f69;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+}
+
+
+.row #btnOrder i{
+  margin-left: .5rem;
+  animation: animate .5s ease infinite;
+  transition: .5s ease;
+}
+
+
+/* footer start */
+.footer-section {
+  margin-top: 100px;
+  /* background: #FEF2F2; */
+  background-image: linear-gradient(to right, #FFE4D3, #FEF2F2);
+  padding: 50px 100px;
+
+  border-top-left-radius: 90px;
+}
+
+.footer-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  flex-wrap: wrap;
+}
+
+.footer-box p {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.footer-box ul {
+  min-width: 200px;
+}
+
+.footer-section .reserved {
+  margin-top: 30px;
+}
+
+.email-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: white;
+  padding: 2px;
+  border-radius: 10px;
+
+  cursor: pointer;
+  margin: 7px 0;
+}
+
+.email {
+  border: none;
+  outline: none;
+  padding: 5px;
+  flex: 100%;
+}
+
+.email-icon {
+  font-size: 18px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* footer end */
+
+
+
+/* get in touch end */
+
+/* contact section Ends */
+/* h1{
+    font-family: "Great Vibes", cursive;
+}
+h2{
+    font-family: "Poppins", cursive;
+} */
+
+@media (max-width: 1269px) {
+  .bg-img {
+    height: 140vh;
+  }
+
+  .poster {
+    font-size: 60px;
+  }
+
+  .photo-frame {
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: 1230px) {
+  .content {
+    padding: 0 60px;
+  }
+
+  .bg-img {
+    height: 120vh;
+  }
+}
+
+@media (max-width: 1100px) {
+  .content {
+    padding: 0 40px;
+  }
+
+  .bg-img {
+    height: 120vh;
+  }
+
+  .poster {
+    font-size: 45px;
+  }
+
+  .img-field img {
+    height: 320px !important;
+  }
+
+  .sales {
+    height: 75vh;
+  }
+
+  /* contact  */
+  .row {
+    /* background: red; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row form {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .content {
+    padding: 0 30px;
+  }
+
+  .bg-img {
+    height: 110vh;
+  }
+
+  .heroSite {
+    padding-top: 100px;
+  }
+
+  .poster {
+    font-size: 45px;
+  }
+
+  .heroSite .field h3 {
+    font-size: 1.3rem;
+  }
+
+  .img-field img {
+    height: 260px !important;
+  }
+}
+
+@media (max-width: 868px) {
+  .icon {
+    display: block;
+  }
+
+  body.disabled {
+    overflow: hidden;
+  }
+
+  .icon.hide {
+    display: none;
+  }
+
+  .navbar .menu-list {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    left: -100%;
+    top: 0px;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    background: #8b8b8b;
+    transition: all 0.3s ease;
+  }
+
+  .navbar.show .menu-list {
+    left: 0%;
+  }
+
+  .navbar .menu-list li {
+    margin-top: 45px;
+  }
+
+  .navbar .menu-list li a {
+    font-size: 23px;
+    margin-left: -100%;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .navbar.show .menu-list li a {
+    margin-left: 0;
+  }
+
+  .bg-img {
+    height: 120vh;
+  }
+
+  .poster {
+    font-size: 35px;
+  }
+
+  .heroSite .field h3 {
+    font-size: 1.2rem;
+  }
+
+  .img-field img {
+    height: 250px !important;
+  }
+
+  .sales {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 380px) {
+  .navbar .logo a {
+    font-size: 27px;
+  }
+
+  .bg-img {
+    height: 113vh;
+  }
+
+  .sales {
+    height: 120vh;
+  }
+
+  row-textarea{
+    height: 20vh;
+    width: 60%;
+  }
+
+  .row iframe{
+    width :100%;
+    height :250px;
+  }
+}
+
+/* ----------------START----------------------------------  */
+/* -------------------------------------------------- */
+/*------------- scroll buttom to top -------------- */
+
+.scrollTop {
+  position: fixed;
+  bottom: 40px;
+  right: 32px;
+  width: 40px;
+  height: 40px;
+  background: #fff url("images/up-arrow.png");
+  border-radius: 50%;
+  background-size: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  z-index: 100000;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+
+}
+
+
+.scrollTop.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*------------- scroll buttom to top -------------- */
+/* ----------------END----------------------------------  */
+/* -------------------------------------------------- */
+
+/* ------------------------------------------------------------------- */
+/* ------------------------loading css start-------------------------- */
+/* -------------------------------------------------------------------- */
+
+#preloader{
+  background:#fff url(images/loader.gif) no-repeat center center;
+  background-size: 50%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100000;
+}
+
+/* ------------------------------------------------------------------- */
+/* ------------------------loading css end-------------------------- */
+/* -------------------------------------------------------------------- */
